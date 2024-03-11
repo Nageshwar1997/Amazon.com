@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./homePage/header/Header";
 import Home from "./homePage/home/Home";
-import Checkout from "./components/checkout/Checkout";
+import Checkout from "./pages/checkout/Checkout";
 
 function App() {
   return (
