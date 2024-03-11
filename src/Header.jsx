@@ -11,7 +11,6 @@ function Header() {
           <img className='header__logo' src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" />
           <div className="header__search">
               <input className="header__searchInput" type="text" placeholder='Amazon.in Search Products here......' />
-              {/* Search Icon */}
               <SearchIcon className="header__searchIcon" />
           </div>
           <div className="header__nav">
