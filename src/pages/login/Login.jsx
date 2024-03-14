@@ -19,10 +19,10 @@ const Login = () => {
         if (auth) {
           navigate("/");
         }
-        console.log(auth);
+        // console.log(auth);
       })
       .catch((err) => {
-        console.log("Error - ", err);
+        console.log("Error - ", err.message);
       });
   };
 
@@ -33,10 +33,10 @@ const Login = () => {
         if (auth) {
           navigate("/");
         }
-        console.log(auth);
+        // console.log(auth);
       })
       .catch((err) => {
-        console.log("Error - ", err);
+        console.log("Error - ", err.message);
       });
   };
   return (
