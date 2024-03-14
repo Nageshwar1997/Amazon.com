@@ -5,7 +5,7 @@ import CheckoutProduct from "../../components/checkoutProduct/CheckoutProduct";
 import { useStateValue } from "../../components/StateProvider";
 
 const Checkout = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   return (
     <div className="checkout">
       <div className="checkout_left">
@@ -15,14 +15,15 @@ const Checkout = () => {
           alt="Checkout Ad Banner"
         />
         <div>
+          <h3>Hello, {user?.email}</h3>
           <h2 className="checkout__title">
             {basket?.length > 0
               ? "Your Shopping Basket"
               : "Your Shopping Basket is Empty"}
           </h2>
-          {basket?.map((item) => (
+          {basket?.map((item, index) => (
             <CheckoutProduct
-              key={item.id}
+              key={index}
               id={item.id}
               title={item.title}
               image={item.image}
